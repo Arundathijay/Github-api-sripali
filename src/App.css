@@ -64,7 +64,7 @@ h1 {
   font-size: 18px;
   padding-left: 10px;
   background-color: rgba(255, 255, 255, 0.3);
-  color: salmon;
+  color: rgb(51, 136, 186);
 }
 
 .input:focus {
@@ -121,12 +121,12 @@ login {
 }
 
 .row > h2 {
-  color: salmon;
+  color: rgb(37, 91, 172);
   pointer-events: auto;
 }
 
 .row:hover {
-  background-color: rgb(239, 46, 120);
+  background-color: rgb(51, 136, 186);
 }
 
 .row > h2:hover {
@@ -202,9 +202,9 @@ h2 {
 }
 .container-child {
   float: left;
-  height: 20em;
-  width: 33%;
-  padding: 0 5em;
+  height: 10em;
+  width: 15%;
+  padding: 0 10em;
   margin-left: 3em;
   color: rgb(53, 46, 239);
 }
