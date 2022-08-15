@@ -1,4 +1,4 @@
-# Getting Started with Create React App
+# GITHUB API user details 
 - Created the form with the input to search for users.
 - Added the search button.
 - Searching for the user while data is loading. 
