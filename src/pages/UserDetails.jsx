@@ -17,6 +17,12 @@ const UserDetails = (loading) => {
   //   if (loading) {
   //     return <h2 className='loader'> Loading ...</h2>;
   //   }
+
+  return (
+    <div>
+      <img className='avatar' src={users.avatar_url} alt={users.login} />
+    </div>
+  );
 };
 
 export default UserDetails;
