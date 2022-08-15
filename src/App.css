@@ -24,6 +24,10 @@
 .page {
   height: 100vh;
 }
+h1 {
+  display: flex;
+  justify-content: center;
+}
 
 .landing-page-container {
   height: 100%;
@@ -31,7 +35,7 @@
   width: 100%;
   justify-content: center;
   display: flex;
-  background-color: #282d35;
+  background-color: #131313;
   overflow-y: scroll;
 }
 
@@ -132,12 +136,12 @@ login {
   margin-right: 7em;
   justify-content: center;
 }
-h4 {
-  color: rgb(214, 65, 39);
+h2 {
+  color: rgb(51, 136, 186);
 }
 .user-name {
   text-decoration: none;
-  color: rgb(214, 65, 39);
+  color: rgb(37, 91, 172);
   font-size: 32px;
   text-align: center;
 }
@@ -200,7 +204,7 @@ h4 {
   width: 33%;
   padding: 0 5em;
   margin-left: 3em;
-  color: #cf5d43;
+  color: rgb(53, 46, 239);
 }
 .repos {
   margin-left: 3em;

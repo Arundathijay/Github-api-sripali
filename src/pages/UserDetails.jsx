@@ -6,6 +6,7 @@ const UserDetails = (loading) => {
   const { id } = useParams();
   const [users, setUsers] = useState("");
 
+  //display each user details
   useEffect(() => {
     axios({
       method: "get",

@@ -14,7 +14,6 @@ function App() {
   const [followers, setFollowers] = useState([]);
 
   // function passed for onclick event
-
   const handleSubmit = (e) => {
     e.preventDefault();
     searchUsers();
@@ -22,10 +21,9 @@ function App() {
     searchFollowers();
   };
 
+  //sending a request to github api using axios to get users
   const searchUsers = () => {
     setLoading(true);
-    // sending a get request to the API
-
     axios({
       method: "get",
       url: `https://api.github.com/users/${username}`
@@ -35,6 +33,7 @@ function App() {
     });
   };
 
+  //sending a request to github api using axios to get repos of a particular user
   const searchRepos = () => {
     setLoading(true);
     axios({
@@ -45,6 +44,9 @@ function App() {
       setRepos(res.data);
     });
   };
+
+  //sending a request to github api using axios to get followers of a particular user
+
   const searchFollowers = () => {
     setLoading(true);
     axios({
@@ -56,6 +58,7 @@ function App() {
     });
   };
 
+  //function to display mapped repos
   function renderRepos(repo) {
     return (
       <div className='repo-result-container'>
@@ -64,6 +67,7 @@ function App() {
     );
   }
 
+  //function to display mapped followers
   function renderFollowers(follower) {
     return (
       <div className='followers'>
@@ -74,10 +78,10 @@ function App() {
 
   return (
     <div className='page'>
+      <h1>GITHUB API</h1>
       <div className='landing-page-container'>
         <div className='left-side'>
           {/* form to get user input details  */}
-
           <form className='form'>
             <input
               className='input'
@@ -114,6 +118,7 @@ function App() {
                 <div className='container-child'>
                   {followers.map(renderFollowers)}
                 </div>
+
                 <div className='container-child repos'>
                   {repos.map(renderRepos)}
                 </div>
