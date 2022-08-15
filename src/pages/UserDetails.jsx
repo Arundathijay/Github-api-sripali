@@ -14,9 +14,9 @@ const UserDetails = (loading) => {
     }).then((res) => setUsers(res.data));
   }, [id]);
 
-  // if (loading) {
-  //   return <h2 className='loader'> Loading ...</h2>;
-  // }
+  //   if (loading) {
+  //     return <h2 className='loader'> Loading ...</h2>;
+  //   }
 };
 
 export default UserDetails;
