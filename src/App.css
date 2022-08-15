@@ -209,3 +209,9 @@ h2 {
 .repos {
   margin-left: 3em;
 }
+.user-avatar {
+  max-width: 2em;
+  display: inline;
+  padding: 0 3em;
+  margin-right: 50em;
+}

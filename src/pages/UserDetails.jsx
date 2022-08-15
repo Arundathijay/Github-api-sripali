@@ -20,7 +20,7 @@ const UserDetails = (loading) => {
 
   return (
     <div>
-      <img className='avatar' src={users.avatar_url} alt={users.login} />
+      <span>{users.url}</span>
     </div>
   );
 };
